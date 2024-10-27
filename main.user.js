@@ -129,6 +129,7 @@
             switch (node.tagName) {
                 case "RELATIVE-TIME": // 翻译时间元素
                     transTimeElement(node.shadowRoot);
+                    watchTimeElement(node.shadowRoot);
                     return;
 
                 case "INPUT":
@@ -249,15 +250,27 @@
      */
     function transTimeElement(el) {
         const text = el.childNodes.length > 0 ? el.lastChild.textContent : el.textContent;
-        const res = I18N[lang]['public']['time-regexp']; // 时间正则规则
-
-        for (let [a, b] of res) {
-            const translatedText = text.replace(a, b);
-            if (translatedText !== text) {
-                el.textContent = translatedText;
-                break;
-            }
+        const translatedText = text.replace(/^on/, "");
+        if (translatedText !== text) {
+            el.textContent = translatedText;
         }
+    }
+
+    /**
+     * watchTimeElement 函数：监视时间元素变化, 触发和调用时间元素翻译
+     * @param {Element} el - 需要监视的元素。
+     */
+    function watchTimeElement(el) {
+        const MutationObserver =
+            window.MutationObserver ||
+            window.WebKitMutationObserver ||
+            window.MozMutationObserver;
+
+        new MutationObserver(mutations => {
+            transTimeElement(mutations[0].addedNodes[0]);
+        }).observe(el, {
+            childList: true
+        });
     }
 
     /**
