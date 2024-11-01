@@ -433,7 +433,7 @@ I18N["zh-CN"]["public"] = { // 公共区域翻译
         // 顶部提示
         "You only have a single verified email address. We recommend verifying at least one more email address to ensure you can recover your account if you lose access to your primary email.": "您只有一个经过验证的电子邮件地址。我们建议您至少再验证一个电子邮件地址，以确保在失去主邮箱访问权限时可以恢复账户。",
         "Email settings": "电子邮件设置",
-        "Your recovery codes have not been saved in the past year, Make sure you stil have them stored somewhere safe by viewing and downloading them again.": "如果您在过去一年中没有保存恢复密码，请确保将其保存在安全的地方，并再次查看和下载。",
+        "Your recovery codes have not been saved in the past year. Make sure you still have them stored somewhere safe by viewing and downloading them again.": "如果您在过去一年中没有保存恢复密码。请确保将其保存在安全的地方，并再次查看和下载。",
             "View recovery codes": "查看恢复码",
         // 底部红条
         "You can’t perform that action at this time.": "此时无法执行该操作。",
@@ -3912,6 +3912,8 @@ I18N["zh-CN"]["settings/security"] = { // 设置 - 密码和身份身份验证
                     "Show": "显示",
 
             "Recovery options": "恢复选项",
+                "Your two-factor authentication recovery codes have not been downloaded or printed in the last one year. Make sure your recovery codes are up-to-date by viewing and downloading or printing them again.": "您的双因素身份验证恢复码在过去一年中未被下载或打印。请通过查看并再次下载或打印恢复码，确保您的恢复码是最新的。",
+
                 "Recovery codes": "恢复码",
                     "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "恢复码可用于在您无法访问设备且无法接收双因素身份验证码的情况下访问您的账户。",
                     "Viewed": "已查看",
@@ -3972,6 +3974,7 @@ I18N["zh-CN"]["settings/auth"] = {
 
             "Two-factor recovery codes": "双因素身份验证恢复码",
                 "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.": "恢复码可用于在您无法访问设备且无法接收双因素身份验证码的情况下访问您的账户。",
+                "Your two-factor authentication recovery codes have not been downloaded or printed in the last one year. Make sure your recovery codes are up-to-date by downloading or printing them again.": "您的双因素身份验证恢复码在过去一年中没有下载或打印过。请重新下载或打印恢复代码，确保您的恢复代码是最新的。",
 
             "Recovery codes": "恢复码",
                 "Keep your recovery codes as safe as your password. We recommend saving them with a password manager such as": "保持您的恢复码与您的密码一样安全。我们建议使用密码管理器保存它们，例如",
@@ -5096,11 +5099,11 @@ I18N["zh-CN"]["settings/apps"] = { // 设置 - 开发者设置/GitHub 应用
             "to get started developing on the GitHub API. You can also read more about building GitHub Apps in our": "，开始在 GitHub API 上进行开发。您还可以在我们的文档中阅读更多关于构建 GitHub 应用的信息",
             "developer documentation": "开发者文档",
             "A GitHub App can act on its own behalf, taking actions via the API directly instead of impersonating a user. Read more in our": "GitHub 应用可以代表自己执行操作，直接通过 API 执行操作，而不是冒充用户。阅读我们的更多内容", // 存在 app时
-            
+
             // 无应用提示
                 "No GitHub Apps": "无 GitHub 应用",
                     "Want to build something that integrates with and extends GitHub? Register a new GitHub App to get started developing on the GitHub API.": "想创建与 GitHub 集成并扩展 GitHub 的应用程序吗？注册一个新的 GitHub 应用程序，开始使用 GitHub API 进行开发。",
-                
+
                 "View documentation": "查看文档",
 
         // 注册 GitHub 应用 https://github.com/settings/apps/new
@@ -5708,7 +5711,7 @@ I18N["zh-CN"]["settings/tokens"] = { // 设置 - 开发者设置/个人访问令
                 "Loading expiration ...": "载入有效期 ...",
                 "This token has expired.": "此令牌已过期。",
                     "To set a new expiration date, you must regenerate the token.": "要设置新的有效期，您必须重新生成令牌。",
-                
+
                 "No fine-grained tokens created": "没有创建精细化的个人访问令牌",
                     "Need an API token for scripts or testing? Generate a personal access token for quick access to the GitHub API.": "需要用于脚本或测试的 API 令牌？生成个人访问令牌，快速访问 GitHub API。",
 
@@ -7297,7 +7300,7 @@ I18N["zh-CN"]["repository/pull_issue_public"] = { // 仓库 - 议题和拉取请
                 "Assigned to nobody": "无受理人",
                 // [/Awaiting requested review from ([^ ]+)/, "正在等待 $1 审查请求"],
                 "Requested changes must be addressed to merge this pull request.": "要合并这个拉取请求，必须先解决所要求的更改。",
-            
+
             "Relationships": "关系",
 
             "Sort": "排序",
@@ -7822,7 +7825,7 @@ I18N["zh-CN"]["repository/issues"] = { // 仓库 - 议题页面
                     "Deleting issue…": "议题删除中…",
                     // 顶部提醒
                     "The issue was successfully deleted.": "该议题已成功删除。",
-                
+
                 "Participants": "参与者",
 
             "Load more…": "载入更多…",
@@ -8177,7 +8180,7 @@ I18N["zh-CN"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
                 // 首次弹窗
                     "Your first automated security update": "您的第一个自动安全更新",
                         "Dependabot security updates keep your projects secure and up-to-date.": "Dependabot 安全更新使您的项目安全且最新。",
-                        "You can opt out at any time in": "你可以在任何时候选择退出在",
+                        "You can opt out at any time in": "您可以在任何时候选择退出在",
                         "this repository’s settings": "仓库设置",
                         "Got it!": "我知道了",
 
@@ -8647,7 +8650,7 @@ I18N["zh-CN"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
 
             "These merge commits were added into this branch cleanly.": "这些合并提交已被干净利落地添加到该分支中。",
                 "There are no new changes to show.": "没有任何新的变化。",
-            
+
             // 未更改文件检查注释(GA 检查)
                 "Unchanged files with check annotations": "带检查注释的未更改文件",
                     "View workflow job for this annotation": "查看此注释的工作流程作业",
@@ -8719,7 +8722,7 @@ I18N["zh-CN"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
 
                 "conflict": "冲突",
                 "conflicts": "冲突",
-        
+
         // 新版拉取请求提交页面
             "authored and": "撰写和",
             "Browse repository at this point": "查看此时间点的仓库",
@@ -8736,7 +8739,7 @@ I18N["zh-CN"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
         // 提交时展开收缩的描述
         [/Show description for ([a-f0-9]{7})/, "显示提交 $1 的描述"],
         [/Hide description for ([a-f0-9]{7})/, "隐藏提交 $1 的描述"],
-        
+
         // 新版 PR 提交页
         [/wants to merge (\d+) commits? into/, "希望合并 $1 条提交到"],
         [/Commits on (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d+)/, function (all, mon, day, year){
@@ -8753,8 +8756,8 @@ I18N["zh-CN"]["repository/pull"] = { // 仓库 - 某个拉取请求页面
                 "Oct": "10月",
                 "Nov": "11月",
                 "Dec": "12月"};
-            
-            return '提交于' + year + '年' + monKey[mon] + day + '日'; 
+
+            return '提交于' + year + '年' + monKey[mon] + day + '日';
         }],
 
         // 具体某条拉取请求
@@ -9292,18 +9295,18 @@ I18N["zh-CN"]["repository/commit"] = { // 仓库 - 提交页面
             "Filter files…": "筛选文件...",
                 "File extensions": "文件扩展名",
                 "No extension": "无扩展名",
-            
+
             // 中间
             "file": "个文件",
                 "s": " ",
                 "changed": "更改",
-            
+
             "Collapse file tree": "收起文件树",
             "Expand file tree": "展开文件树",
             "Copy file name to clipboard": "复制文件名到剪切板",
 
             "There are no files selected for viewing": "没有更改",
-            
+
             // 右侧
             "Top": "顶部",
             "Layout": "布局",
@@ -9316,7 +9319,7 @@ I18N["zh-CN"]["repository/commit"] = { // 仓库 - 提交页面
                 "Expand below": "向下展开",
                 "Go to previous hunk": "上一块",
                 "Go to next hunk": "下一块",
-            
+
             "Customizable line height": "自定义行高",
                 "The default line height has been increased for improved accessibility. You can choose to enable a more compact line height from the view settings menu.": "默认行高已增加，以提高可访问性。您可以从视图设置菜单中选择启用更紧凑的行高。",
                 "Enable compact line height": "启用自定义行高",
@@ -10865,7 +10868,7 @@ I18N["zh-CN"]["repository/new"] = { // 仓库 - 新建/编辑/上传/删除文�
                     "branch.": "分支。", // 上传页面
                     "for this commit and start a pull request.": "为这个提交，并且发起一个拉取请求。", // 上传页面
                     "Learn more about pull requests.": "了解更多关于拉取请求的信息。", // 上传页面
-                
+
                 // 提交后处理页面
                     "Processing your files…": "正在处理您的文件...",
 
@@ -11019,14 +11022,14 @@ I18N["zh-CN"]["repository/wiki"] = { // 仓库 - wiki 页面
                                 "To create a reference link, use two sets of square brackets.": "要创建引用链接，请使用两组方括号。",
                                 "will link to the internal reference": "将链接到",
                         "Emphasis": "强调",
-                            // 星号（*）和下划线（_）被视为强调，并用 `<em>` 标签包裹，这在大多数浏览器中通常显示为斜体。双星号（**）或双下划线（__）被视为使用 `<strong>` 标签的粗体。要创建斜体或粗体文本，只需用单个/双个星号/下划线包裹你的单词。例如，**我的双重强调文本** 变成我的双重强调文本，*我的单一强调文本* 变成我的单一强调文本。
+                            // 星号（*）和下划线（_）被视为强调，并用 `<em>` 标签包裹，这在大多数浏览器中通常显示为斜体。双星号（**）或双下划线（__）被视为使用 `<strong>` 标签的粗体。要创建斜体或粗体文本，只需用单个/双个星号/下划线包裹您的单词。例如，**我的双重强调文本** 变成我的双重强调文本，*我的单一强调文本* 变成我的单一强调文本。
                                 "Asterisks (": "星号（",
                                 ") and underscores (": "）和下划线（",
                                 ") are treated as emphasis and are wrapped with an": "）被视为强调，并用",
                                 "tag, which usually displays as italics in most browsers. Double asterisks (": "标签包裹，这在大多数浏览器中通常显示为斜体。双星号（",
                                 ") or double underscores (": "）或双下划线（",
                                 ") are treated as bold using the": "）被视为使用",
-                                "tag. To create italic or bold text, simply wrap your words in single/double asterisks/underscores. For example,": "标签的粗体。要创建斜体或粗体文本，只需用单个/双个星号/下划线包裹你的单词。例如，",
+                                "tag. To create italic or bold text, simply wrap your words in single/double asterisks/underscores. For example,": "标签的粗体。要创建斜体或粗体文本，只需用单个/双个星号/下划线包裹您的单词。例如，",
                                 "becomes": "变成",
                                 ", and": "，",
                         // 代码
@@ -11303,7 +11306,7 @@ I18N["zh-CN"]["repository/releases"] = { // 仓库 - 发行版页面
             // 有发行版时
             "Draft a new release": "起草发行版",
             "Find a release": "搜索发行版",
-                
+
                 // 搜索未找到
                 "No releases found": "无匹配结果",
             // 左侧栏
@@ -15545,13 +15548,13 @@ I18N["zh-CN"]["homepage"] = { // 未登录的首页
                 "Increase productivity with AI-powered coding assistance, including code completion, chat, and more.": "通过人工智能编码辅助（包括代码完成、聊天等）提高生产力。",
                 "Survey: The AI wave continues to grow on software development teams, 2024.": "调查：2024 年，人工智能浪潮将在软件开发团队中持续高涨。",
                 "Explore GitHub Copilot": "探索 GitHub Copilot",
-            
+
             "Duolingo boosts developer speed by 25% with GitHub Copilot": "多邻国利用 GitHub Copilot 将开发速度提高了 25%",
               "Read customer story": "阅读客户故事",
 
             "2024 Gartner® Magic Quadrant™ for AI Code Assistants": "2024 年 Gartner® 人工智能代码助手魔力象限™",
               "Read report": "阅读报告",
-        
+
         "Optimize your process with simple and secured CI/CD.": "使用简单、安全的 CI/CD 优化您的流程。",
             "Get up and running in seconds": "数秒内即可启动并运行",
                 "Start building instantly with a comprehensive dev environment in the cloud.": "利用云中全面的开发环境立即开始构建。",
@@ -15572,7 +15575,7 @@ I18N["zh-CN"]["homepage"] = { // 未登录的首页
                 "Solve security debt.": "解决担保债务。",
                     "Leverage AI-assisted security campaigns to reduce application vulnerabilities and zero-day attacks.": "利用人工智能辅助安全活动来减少应用程序漏洞和零日攻击。",
                     "Discover security campaigns": "探索安全活动",
-                
+
                 "Dependencies you can depend on.": "您可以依赖的依赖项。",
                     "Update vulnerable dependencies with supported fixes for breaking changes.": "使用支持的修复程序更新易受攻击的依赖项以解决重大更改。",
                     "Learn about Dependabot": "了解 Dependabot",
@@ -15610,7 +15613,7 @@ I18N["zh-CN"]["homepage"] = { // 未登录的首页
             "with teams of any size in any industry.": "可以适应任何行业、任何规模的团队。",
 
             "Explore customer stories": "探索客户故事",
-        
+
         "Millions of developers and businesses call GitHub home": "数百万开发者和企业将 GitHub 视为自己的家",
             "Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join the world’s most widely adopted AI-powered developer platform to build the technologies that redefine what’s possible.": "无论您是在扩展开发流程还是只是学习如何编码，GitHub 都是您的理想选择。加入全球最广泛采用的 AI 驱动开发者平台，构建重新定义可能性的技术。",
 
@@ -17928,7 +17931,7 @@ I18N["zh-CN"]["marketplace"] = { // GitHub 市场
                 "Model": "模型",
                     "Get early access to our playground for models": "抢先体验我们的模型市场",
                         "Join our limited beta waiting list today and be among the first to try out an easy way to test models.": "立即加入我们的限量测试版候补名单，率先体验轻松测试模型的新方式。",
-                    
+
                     // 分类
                         "All providers": "所有提供商",
                     "Capability:": "能力：",
@@ -17947,7 +17950,7 @@ I18N["zh-CN"]["marketplace"] = { // GitHub 市场
                         "reasoning": "推理",
                         "search": "搜索",
                         "understanding": "理解",
-                
+
            "Extend GitHub": "拓展 GitHub",
                 "Add tools to help you build and grow": "添加工具来帮助您构建和成长",
                 "Find tools to improve your workflow": "寻找改进工作流程的工具", // 未登录
@@ -21769,7 +21772,7 @@ I18N["zh-CN"]["repository/actions/metrics/usage"] = { // 仓库 - 洞察 - 操�
             //"Total minutes across all workflows in this organization for current month": "当月该组织所有工作流程的总时长",
         "Total job runs": "总工作运行",
             //"Total job runs across all workflows in this organization for current month": "当月该组织所有工作流程的工作运行总数",
-        
+
         "Filter": "筛选",
             "Search or filter": "搜索或筛选",
             "Exclude": "排除",
@@ -21802,7 +21805,7 @@ I18N["zh-CN"]["repository/actions/metrics/usage"] = { // 仓库 - 洞察 - 操�
                         "Add a filter": "添加",
                             "Text": "文本",
                         "Apply": "应用",
-            
+
             // 关闭弹窗
             "Discard changes?": "是否放弃更改？",
             "You have unsaved changes. Are you sure you want to discard them?": "您有未保存的更改。您确定要放弃它们吗？",
@@ -21812,7 +21815,7 @@ I18N["zh-CN"]["repository/actions/metrics/usage"] = { // 仓库 - 洞察 - 操�
             //筛选器报错窗口
             "Empty value for": "空值：",
             "Text will be ignored since log searching is not yet available:": "由于尚未提供日志搜索功能，文本将被忽略：",
-        
+
         "Workflows": "工作流",
         "Jobs": "作业",
             "Job": "作业",
@@ -21822,7 +21825,7 @@ I18N["zh-CN"]["repository/actions/metrics/usage"] = { // 仓库 - 洞察 - 操�
             "hosted": "托管",
             "hosted-larger": "大型托管",
             "self-hosted": "自托管",
-        
+
         // 无数据
             "No table data available yet.": "还没有数据。",
                 "You don't have workflows on any of your organization repositories.": "您的任何组织仓库中都没有工作流程。",
@@ -21846,7 +21849,7 @@ I18N["zh-CN"]["repository/actions/metrics/usage"] = { // 仓库 - 洞察 - 操�
                 "last 30 days": "最近30天",
                 "last 90 days": "最近90天",
                 "last year": "最近一年",};
-            
+
             return periodKey[period] + '该组织所有工作流程的' + typeKey[type];
         }],
     ],
