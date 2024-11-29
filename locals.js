@@ -434,6 +434,7 @@ I18N["zh-CN"]["title"] = { // 标题翻译
         [/New release · ([^ ]+)/, "新发行版 · $1"],
         [/Codespaces secrets · ([^ ]+)/, "代码空间机密 · $1"],
         [/Dependabot secrets · ([^ ]+)/, "Dependabot 机密 · $1"],
+        [/Invitation to join ([^ ]+)/, "加入 $1 邀请"],
         ["_regexp_end", "end"]
     ],
 };
@@ -6152,6 +6153,8 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
 
             // 顶部提示
             "Sorry, that branch already exists.": "抱歉，该分支已存在。",
+            "has invited you to collaborate on this repository": "邀请您成为该仓库协作者",
+                "View invitation": "查看",
 
             // 仓库违反 DMCA
             "Repository unavailable due to DMCA takedown.": "由于 DMCA 删除，仓库不可用。",
@@ -6435,6 +6438,7 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
         [/This user has been invited to collaborate on the ([^ ]+) repository./, "该用户已被邀请在 $1 仓库上进行协作。"],
         [/You are the owner of the (.*) repository./, "您是 $1 仓库的所有者。"],
         [/This user is the owner of the (.*) repository./, "该用户是 $1 仓库的所有者。"],
+        [/You have been invited to collaborate on the (.*) repository./, "您已受邀参与 $1 仓库的协作。"],
         [/You have previously committed to the (.*) repository./, "您之前有提交到 $1 仓库。"],
         [/This user has previously committed to the (.*) repository./, "该用户之前有提交到 $1 仓库。"],
         [/This repository has been archived by the owner on (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d+), (\d+). It is now read-only./, function(all, m , d ,y){
@@ -6459,6 +6463,8 @@ I18N["zh-CN"]["repository-public"] = { // 仓库 - 公共部分
 
             return reactedKey[reacted];
         }],
+        // 成为协作者提示
+        [/You now have push access to the ([^ ]+) repository./, "您现在拥有推送至 $1 仓库的权限"],
         ...I18N["zh-CN"]["orgs-public"]["regexp"],
     ],
 };
@@ -9149,6 +9155,11 @@ I18N["zh-CN"]["repository/compare"] = { // 仓库 - 比较并创建拉取请求
         "View file": "查看文件",
         "Edit file": "编辑文件",
         "Delete file": "删除文件",
+
+        // 加载差异失败
+        "This comparison is taking too long to generate.": "生成比较结果的时间过长。",
+        "Unfortunately it looks like we can’t render this comparison for you right now. It might be too big, or there might be something weird with your repository.": "不幸的是，我们现在无法为您提供这种比较。它可能太大了，或者您的仓库有什么奇怪的地方。",
+        "You can try running this command locally to see the comparison on your machine:": "您可以尝试在本地运行此命令以查看比较结果：",
 
     },
     "regexp": [ // 正则翻译
@@ -12417,8 +12428,10 @@ I18N["zh-CN"]["repository/invitations"] = { // 仓库 - 接受邀请页面
 
         // 接受邀请 /<user-name>/<repo-name>/invitations
             "invited you to collaborate": "邀请您进行协作",
+            "invited you to collaborate on": "邀请您进行协作",
             "Accept invitation": "接受邀请",
             "Decline": "拒绝",
+            "Decline invitation": "拒绝",
             "Owners": "所有者",
             "Your public profile information": "您的公开个人资料信息",
             "Certain activity": "某些活动",
@@ -12431,6 +12444,7 @@ I18N["zh-CN"]["repository/invitations"] = { // 仓库 - 接受邀请页面
     },
     "regexp": [ // 正则翻译
         [/of ([^ ]+) will be able to see:/, "$1 将能够看到："], // 邀请页
+        [/Block ([^ ]+)/, "拉黑 $1"],
     ],
 };
 
@@ -12774,14 +12788,18 @@ I18N["zh-CN"]["repository/graphs/traffic"] = { // 仓库 -> 洞察 - 流量
 
             "Referring sites": "引荐网站",
             "Site": "站点",
+            "Domains": "域名",
             "Views": "浏览",
             "Unique visitors": "唯一访客",
+            "Unique Visits": "唯一访问",
             "views": "次浏览",
             "view": "次浏览",
+            "Visits": "访问",
             "unique visitors": "个唯一访客",
             "unique visitor": "个唯一访客",
             "Popular content": "热门内容",
             "Content": "内容",
+            "Path": "路径",
 
             "We don’t have enough data to show anything useful.": "我们没有足够的数据来显示任何有用的东西。",
             "It usually takes about a week to populate this graph.": "通常需要一周左右的时间来填充此图表。",
