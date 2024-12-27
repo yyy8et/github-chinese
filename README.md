@@ -1,4 +1,4 @@
-# [GitHub 中文化插件][project-url]
+26db8231ed77583857ba348d7566fc27ebb537f7# [GitHub 中文化插件][project-url]
 
 > 本项目源自: [52cik/github-hans](https://github.com/52cik/github-hans)
 >
